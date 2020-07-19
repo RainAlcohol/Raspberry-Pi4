@@ -1,4 +1,4 @@
-**synology mount**
+synology mount
 
     sudo apt-get install cifs-utils
     sudo mkdir mnt
@@ -13,12 +13,12 @@
      
 ~ : home
 
-**fst**
+fst
      
     sudo nano /etc/fstab
     //192.168.0.200/video /mnt/synology cifs user=id,pass=password,rw   0   0
 
-**docker 설치**
+docker 설치
 
     sudo apt install docker.io
     sudo systemctl enable --now docker
