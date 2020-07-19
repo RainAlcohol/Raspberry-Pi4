@@ -7,7 +7,10 @@
 
     cd
     sudo mount -t cifs //192.168.0.200/video /mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
-
+----
+      
+      sudo chmod 777 -R /mnt
+     
 ~ : home
 
 **fst**
