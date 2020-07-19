@@ -29,19 +29,19 @@ docker 설치
     docker version
     docker run hello-world
 
-**docker plex**
+docker plex
 
     sudo docker create \--name=plex \--restart=unless-stopped \--net=host \-e VERSION=latest \-e PUID=$UID \-e PGID=$(id -g $USER) \-e TZ=Asia/Seoul \-v /mnt/synology/plex:/config \-v /transcode:/transcode \-v /mnt/synology:/data \linuxserver/plex
 ----
 
 /library, /transcode, /mnt/synology 적정한경로로 변경하여 지정
 
-**도커시작,재시작**
+도커시작,재시작
     
     sudo docker start plex
     sudo docker restart plex
 
-**다음AGENT 설치** 
+다음AGENT 설치
 
     sudo apt-get install git 
     sudo gitclone https://github.com/soju6jan/SJ_Daum.bundle
