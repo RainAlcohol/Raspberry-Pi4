@@ -22,7 +22,7 @@
     sudo usermod -aG docker ubuntu
 ----
 재부팅 후 일반유저 사용
-----
+
     docker version
     docker run hello-world
 
