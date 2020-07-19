@@ -37,3 +37,9 @@
     
     sudo docker start plex
     sudo docker restart plex
+
+**다음AGENT 설치** 
+
+    sudo apt-get install git 
+    sudo gitclone https://github.com/soju6jan/SJ_Daum.bundle
+    
