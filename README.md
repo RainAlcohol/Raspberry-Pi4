@@ -6,7 +6,7 @@
     sudo mkdir synology
 
     cd
-    sudo mount -t cifs //192.168.0.200/volume2 /mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
+    sudo mount -t cifs //192.168.0.200/video /mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
 
 ~ : home
 
