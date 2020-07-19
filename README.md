@@ -11,6 +11,7 @@ synology mount
 폴더 권한 주기      
       
       sudo chmod 777 -R /mnt
+      sudo chmod +x 00000
      
 ~ : home
 
@@ -45,5 +46,5 @@ docker plex
 다음AGENT 설치
 
     sudo apt-get install git 
-    sudo gitclone https://github.com/soju6jan/SJ_Daum.bundle
+    sudo git clone https://github.com/soju6jan/SJ_Daum.bundle
     
