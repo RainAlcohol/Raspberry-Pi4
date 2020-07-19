@@ -1,22 +1,16 @@
-# rasp
+** synology mount **
 
-# synology mount
+    sudo apt-get install cifs-utils
+    sudo mkdir mnt
+    cd mnt
+    sudo mkdir synology
 
-sudo apt-get install cifs-utils
-
-sudo mkdir mnt
-
-cd mnt
-
-sudo mkdir synology
-
-cd
-
-sudo mount -t cifs //192.168.0.200/video ~/mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
+    cd
+    sudo mount -t cifs //192.168.0.200/video ~/mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
 
 ~ : home
 
-# fst 
+** fst **
 sudo nano /etc/fstab
 //192.168.0.200/video ~/mnt/synology cifs user=id,pass=password,rw   0   0
 
