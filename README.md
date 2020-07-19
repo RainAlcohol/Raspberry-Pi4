@@ -6,14 +6,14 @@
     sudo mkdir synology
 
     cd
-    sudo mount -t cifs //192.168.0.200/volume2 ~/mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
+    sudo mount -t cifs //192.168.0.200/volume2 /mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
 
 ~ : home
 
 **fst**
      
     sudo nano /etc/fstab
-    //192.168.0.200/video ~/mnt/synology cifs user=id,pass=password,rw   0   0
+    //192.168.0.200/video /mnt/synology cifs user=id,pass=password,rw   0   0
 
 **docker 설치**
 
