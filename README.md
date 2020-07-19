@@ -8,7 +8,7 @@ synology mount
     cd
     sudo mount -t cifs //192.168.0.200/video /mnt/synology -o user=xxxxxx,pass=xxxxxxxx,rw
 
-plex 라이브러리폴더 권한 주기      
+폴더 권한 주기      
       
       sudo chmod 777 -R /mnt
      
@@ -24,7 +24,7 @@ docker 설치
     sudo apt install docker.io
     sudo systemctl enable --now docker
     sudo usermod -aG docker ubuntu
-----
+
 재부팅 후 일반유저 사용
 
     docker version
