@@ -1,3 +1,4 @@
+vnc://ubuntu.local
 관련 링크
 
     http://nbspcrop.blogspot.com/2019/04/blog-post.html 
