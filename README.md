@@ -1,7 +1,10 @@
 vnc://ubuntu.local
 관련 링크
 
-    http://nbspcrop.blogspot.com/2019/04/blog-post.html 
+    http://nbspcrop.blogspot.com/2019/04/blog-post.html
+    https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc
+    docker run -p 6080:80 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+    http://127.0.0.1:6080/
 
 synology mount
 
