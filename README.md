@@ -16,7 +16,7 @@ synology mount
 
 
     cd
-    sudo mount -t cifs //192.168.0.200/video /mnt -o user=xxxxxx,pass=xxxxxxxx,rw
+    sudo mount -t cifs //192.168.0.200/video ~/mnt -o user=xxxxxx,pass=xxxxxxxx,rw
 
 폴더 권한 주기      
       
