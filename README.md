@@ -43,7 +43,7 @@ docker 설치
 
 docker plex
 
-    sudo docker create \--name=plex \--restart=unless-stopped \--net=host \-e VERSION=latest \-e PUID=$UID \-e PGID=$(id -g $USER) \-e TZ=Asia/Seoul \-v /library:/config \-v /transcode:/transcode \-v /mnt:/data \linuxserver/plex
+    sudo docker create \--name=plex \--restart=unless-stopped \--net=host \-e VERSION=latest \-e PUID=$UID \-e PGID=$(id -g $USER) \-e TZ=Asia/Seoul \-v /plex/library:/config \-v /plex/transcode:/transcode \-v /mnt:/data \linuxserver/plex
 ----
 
 /library, /transcode, /mnt/synology 적정한경로로 변경하여 지정
