@@ -7,11 +7,11 @@ vnc://ubuntu.local
 synology mount
 
     sudo apt-get install cifs-utils
-    sudo mkdir /mnt
-    sudo mkdir /plex
-    cd /plex
-    sudo mkdir /library
-    sudo mkdir /transcode
+    sudo mkdir ~/mnt
+    sudo mkdir ~/plex
+    cd ~/plex
+    sudo mkdir ~/library
+    sudo mkdir ~/transcode
 
 
 
@@ -28,7 +28,7 @@ synology mount
 fst
      
     sudo nano /etc/fstab
-    //192.168.0.200/video /mnt/synology cifs user=id,pass=password,rw   0   0
+    //192.168.0.200/video ~/mnt cifs user=id,pass=password,rw   0   0
     CMD1: //192.168.0.1/d /home/mkblog/database/ cifs username=ID,password=PASSWORD,uid=mkblog,gid=mkblog 0 0
     CMD2: //192.168.0.1/d /home/mkblog/database/ cifs credentials=/root/.IDPW_FILE,uid=mkblog,gid=mkblog 0 0
 
@@ -45,7 +45,7 @@ docker 설치
 
 docker plex
 
-    sudo docker create \--name=plex \--restart=unless-stopped \--net=host \-e VERSION=latest \-e PUID=$UID \-e PGID=$(id -g $USER) \-e TZ=Asia/Seoul \-v /plex/library:/config \-v /plex/transcode:/transcode \-v /mnt:/data \linuxserver/plex
+    sudo docker create \--name=plex \--restart=unless-stopped \--net=host \-e VERSION=latest \-e PUID=$UID \-e PGID=$(id -g $USER) \-e TZ=Asia/Seoul \-v ~/plex/library:/config \-v ~/plex/transcode:/transcode \-v ~/mnt:/data \linuxserver/plex
 ----
 
 /library, /transcode, /mnt/synology 적정한경로로 변경하여 지정
