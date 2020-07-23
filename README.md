@@ -29,6 +29,8 @@ fst
      
     sudo nano /etc/fstab
     //192.168.0.200/video /mnt/synology cifs user=id,pass=password,rw   0   0
+    CMD1: //192.168.0.1/d /home/mkblog/database/ cifs username=ID,password=PASSWORD,uid=mkblog,gid=mkblog 0 0
+    CMD2: //192.168.0.1/d /home/mkblog/database/ cifs credentials=/root/.IDPW_FILE,uid=mkblog,gid=mkblog 0 0
 
 docker 설치
 
