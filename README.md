@@ -15,7 +15,10 @@ synology mount
     sudo mkdir ~/library
     sudo mkdir ~/transcode
 
+라즈베리파이 3.0 .속도 느림 관련 
 
+    echo options usb-storage quirks=VENDORID:PRODUCTID:u | sudo tee /etc/modprobe.d/blacklist_uas.conf
+    sudo update-initramfs -u
 
     cd
     sudo mount -t cifs //192.168.0.200/video ~/mnt -o user=xxxxxx,pass=xxxxxxxx,rw
