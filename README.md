@@ -20,6 +20,7 @@ synology mount
     echo options usb-storage quirks=VENDORID:PRODUCTID:u | sudo tee /etc/modprobe.d/blacklist_uas.conf
     sudo update-initramfs -u
 
+마운트 명령어
     cd
     sudo mount -t cifs //192.168.0.200/video ~/mnt -o user=xxxxxx,pass=xxxxxxxx,rw
 
