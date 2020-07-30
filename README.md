@@ -3,6 +3,8 @@ vnc://ubuntu.local
 
     http://nbspcrop.blogspot.com/2019/04/blog-post.html
     https://linuxconfig.org/remote-desktop-sharing-on-ubuntu-20-04-focal-fossa
+    https://github.com/raspberrypi/firmware/tree/master/boot
+    https://krdesigns.com/articles/Boot-raspbian-ubuntu-20.04-official-from-SSD-without-microsd
 
 synology mount
 
