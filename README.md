@@ -6,6 +6,9 @@ vnc://ubuntu.local
     https://github.com/raspberrypi/firmware/tree/master/boot
     https://krdesigns.com/articles/Boot-raspbian-ubuntu-20.04-official-from-SSD-without-microsd
 
+
+sudo sed -i 's/ports.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
+
 synology mount
 
     sudo apt-get install cifs-utils
