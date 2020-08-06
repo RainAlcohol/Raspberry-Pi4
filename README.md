@@ -19,8 +19,15 @@ synology mount
 
 라즈베리파이 3.0 .속도 느림 관련 
 
+    echo "152d:0578:u" | sudo tee /sys/module/usb_storage/parameters/quirks
     echo options usb-storage quirks=VENDORID:PRODUCTID:u | sudo tee /etc/modprobe.d/blacklist_uas.conf
     sudo update-initramfs -u
+    
+    echo options usb-storage quirks=152d:0578:u | sudo tee /etc/modprobe.d/blacklist_uas.conf
+    sudo update-initramfs -u
+    sudo reboot
+
+
 
 마운트 명령어
     cd
