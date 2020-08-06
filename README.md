@@ -7,7 +7,6 @@ vnc://ubuntu.local
     https://krdesigns.com/articles/Boot-raspbian-ubuntu-20.04-official-from-SSD-without-microsd
 
 
-sudo sed -i 's/ports.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
 
 synology mount
 
